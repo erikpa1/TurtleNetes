@@ -7,7 +7,7 @@ import (
 )
 
 /*
-POST /api/auth/login
+POST /api/netesAuth/login
 Body:
 
 	{
@@ -21,7 +21,7 @@ func _TryToLoginUser(c *gin.Context) {
 }
 
 /*
-POST /api/auth/activate
+POST /api/netesAuth/activate
 Body:
 
 	{

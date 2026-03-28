@@ -7,12 +7,11 @@ import (
 )
 
 type GinServerConfig struct {
-	Protocol    string            `json:"protocol"`
-	Host        string            `json:"host"`
-	Port        string            `json:"port"`
-	Mongo       string            `json:"mongo"`
-	MongoDbName string            `json:"mongoDbName"`
-	ApiKeys     map[string]string `json:"apiKeys"`
+	Protocol    string `json:"protocol"`
+	Host        string `json:"host"`
+	Port        string `json:"port"`
+	Mongo       string `json:"mongo"`
+	MongoDbName string `json:"mongoDbName"`
 }
 
 var SERVER_CONFIG = &GinServerConfig{}

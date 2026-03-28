@@ -3,7 +3,6 @@ package main
 import (
 	"net/http"
 	"time"
-	"turtle/core/dbclient"
 	"turtle/core/lgr"
 	"turtle/core/serverKit"
 	"turtle/netes/deployListener"
@@ -20,7 +19,7 @@ func main() {
 	lgr.SetOutputFolder("../logs", "TurtleNetes", true)
 
 	serverKit.LoadGinConfig()
-	dbclient.InitMongoDb()
+	//dbclient.InitMongoDb()
 
 	lgr.Info("Starting server with config: %+v", serverKit.SERVER_CONFIG)
 	lgr.Info("Server URL: %s", serverKit.SERVER_CONFIG.GetURL())
